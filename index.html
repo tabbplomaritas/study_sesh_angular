@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Quote Finder App</title>
+</head>
+<body>
+  <a href="#!/quote-search"><h1>HFTL Quote Finder</h1></a>
+  
+
+<!-- <a href="#!/quote-search">search</a> -->
+  <ng-view></ng-view>
+
+<!-- angular -->
+  <script src='https://code.angularjs.org/1.6.5/angular.min.js'></script>
+  <script src='https://code.angularjs.org/1.6.5/angular-route.min.js'></script>
+  <!-- Our scripts -->
+  <script src="js/module.js"></script>
+  <script src="js/quote-faves-comp.js"></script>
+  <script src="js/quote-list-comp.js"></script>
+  <script src="js/quote-search-comp.js"></script>
+  <script src="js/quote-service.js"></script>
+ 
+</body>
+</html>
