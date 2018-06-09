@@ -9,10 +9,10 @@ const quoteList = {
   },
 
   template: `
-      <section class="quote">
-        <p> "{{ $ctrl.quote.quote }}"</p>
-        <p>  ~{{ $ctrl.quote.author }} </p>
-        <button class="button_faves" ng-click="$ctrl.addToFaves($ctrl.quote, $event);">+</button>
+      <section class="quote" ng-repeat="quote in $ctrl.quote">
+        <p> "{{ quote.quote }}"</p>
+        <p>  ~{{ quote.author }} </p>
+        <button class="button_faves" ng-click="$ctrl.addToFaves(quote, $event);">+</button>
       </section>
 
   `, 

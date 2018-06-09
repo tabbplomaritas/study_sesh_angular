@@ -13,6 +13,7 @@ h1,h2 {
   margin: 0 auto;
   font-size: 4rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -35,11 +36,17 @@ quote-main {
 
 quote-list{
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 80%;
 }
 
 quote-faves {
+  display: flex;
+  flex-direction: column;
   width: 80%;
+  margin: 0 auto;
 }
 
 .checkmark {

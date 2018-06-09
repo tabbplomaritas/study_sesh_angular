@@ -35,11 +35,16 @@ let faves = [];
     return faves;
   }
 
+  const backToList = () => {
+    $location.path("/quote-main");
+  }
+
   return {
     getQuotes, 
     returnResults, 
     addToFaves, 
-    getFaves
+    getFaves, 
+    backToList
   };
 }
 
